@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Pump {
+class PumpMetric {
   public:
     float dispCc;
     float dispCir;
@@ -9,7 +9,7 @@ class Pump {
     float pressure;
 
 
-    Pump(float dispCc, float pumpSpeed, float pressure){
+    PumpMetric(float dispCc, float pumpSpeed, float pressure){
         this->dispCc = dispCc;
         this->pumpSpeed = pumpSpeed;
         this->pressure = pressure;
@@ -32,7 +32,7 @@ class Pump {
 
 
 int main() {
-    Pump pump1(140, 1800, 3000);
+    PumpMetric pump1(140, 1800, 3000);
     cout<<pump1.flow()<<endl;
     ;
 
